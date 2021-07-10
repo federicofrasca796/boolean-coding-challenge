@@ -1,0 +1,79 @@
+*{
+  font-family: 'Questrial', sans-serif;
+  box-sizing:border-box;
+}
+
+/*background image*/
+html{
+  background-image: url("background.jpg");
+  background-size: cover;
+  min-height: 100%;
+}
+
+/* main transparent black box */
+.contentbox{
+  margin:auto;
+  padding:5%;
+  border-radius: 20px;
+  width: 70%;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+#logo{
+  width: 30%;
+  margin: 1%;
+}
+
+/*center alignment*/
+header,nav{
+  text-align: center;
+}
+/*nav padding and bgcolor*/
+nav{
+  padding: 15px;
+  background-color: lime;
+}
+
+/*headers adjust*/
+h1{
+  font-weight: bold;
+  color: lime;
+  margin:0 0 1%;
+}
+h2{
+  font-weight: 700;
+  color: white;
+  margin:2% 0 1% 0;
+}
+
+/*symbols before tags*/
+section>h2:first-child:before{
+  content:"\25A0";
+}
+section>div:nth-child(2):before{
+  content: "\21A6";
+}
+
+/* white text for regular font*/
+section{
+  color:white
+}
+
+/*State of charge bars*/
+.statusbar{
+  margin: 1% 0  ;
+  height: 2em;
+  border-radius: 5px;
+}
+.full{
+  width: 80%;
+  background-color: lime;
+}
+.half{
+  width: 50%;
+  background-color: darkorange;
+}
+.low{
+  width: 20%;
+  background-color: crimson;
+}
